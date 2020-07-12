@@ -36,7 +36,6 @@ import io
 import seaborn as sns
 
 import matplotlib.pyplot as plt
-import matplotlib.pyplot as plt
 
 import plotly.express as px
 import plotly.graph_objs as go
@@ -143,7 +142,7 @@ app = dash.Dash(__name__, external_stylesheets=external_stylesheets)
              
 app.layout = html.Div([
     dcc.Tabs([
-        dcc.Tab(label='Téléversement et analyse descriptive du dataset sélectionné ', children=[
+        dcc.Tab(label='Analyse descriptive du dataset ', children=[
             dbc.Container([
                 dbc.Row([
                     html.H2(children='Informations sur le dataset :'),
